@@ -1,0 +1,88 @@
+name: Work Item
+description: Create a new actionable work item
+title: "<Customer> - <Brief description>"
+labels: []
+body:
+  - type: input
+    id: customer
+    attributes:
+      label: Customer / Context
+      description: Which customer or context is this for? (Use the display name from your customer map in copilot-instructions.md)
+      placeholder: "e.g. Fabrikam, Internal, Acme Corp"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How urgent is this?
+      options:
+        - P0 - Critical / blocking
+        - P1 - High / time-sensitive
+        - P2 - Normal / planned
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Work Type
+      description: What kind of work is this?
+      options:
+        - Investigation / Troubleshooting
+        - Architecture Review
+        - Migration / Upgrade
+        - Documentation / Runbook
+        - Meeting Prep
+        - Support Case
+        - Training / Enablement
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: ticket-ref
+    attributes:
+      label: Ticket / Case Reference
+      description: Link to ICM, ServiceNow, Jira, or support ticket if applicable
+      placeholder: "e.g. REQ4127636 or ICM #12345678"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be done? Include context, symptoms, and any relevant links.
+      placeholder: |
+        ## Problem
+        <What's happening?>
+
+        ## Expected Outcome
+        <What does "done" look like?>
+
+        ## References
+        - Docs: ...
+        - Previous issue: #...
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What's in and out of scope?
+      placeholder: |
+        **In scope:** ...
+        **Out of scope:** ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Any other context - meeting dates, contacts, dependencies, etc.
+    validations:
+      required: false
