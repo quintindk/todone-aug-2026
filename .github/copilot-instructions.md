@@ -72,6 +72,7 @@ Reusable Copilot skills live in `.github/skills/`. Each skill has step-by-step i
 | Skill                | Directory                          | Purpose                                                                              |
 |----------------------|------------------------------------|--------------------------------------------------------------------------------------|
 | `issue-scaffolding`  | `.github/skills/issue-scaffolding/`| Create GitHub issue + `knowledge/<slug>/<issue>/` folder from template + board entry |
+| `reverse-iac`        | `.github/skills/reverse-iac/`      | Reverse-engineer a live Azure RG into Bicep IaC + diagram + security + deployment    |
 | `daily-report`       | `.github/skills/daily-report/`     | Generate daily summary from git, sessions, calendar, emails, chats                   |
 | `weekly-planning`    | `.github/skills/weekly-planning/`  | Monday-morning plan from previous reports, board, calendar, emails                   |
 | `weekly-report`      | `.github/skills/weekly-report/`    | Friday-afternoon rollup from daily reports, git, board — timesheet-ready             |
@@ -131,7 +132,7 @@ Use sub-issues for blocking dependencies (tickets, access requests, third-party 
   ```bash
   pandoc knowledge/<slug>/<n>/README.md -o knowledge/<slug>/<n>/README.docx
   ```
-- **Use draw.io** for architecture diagrams. Save `.drawio` files directly and open them in VS Code with the `hediet.vscode-drawio` extension. Don't open diagrams in the browser.
+- **Use draw.io** for architecture diagrams. Save `.drawio` files directly and open them in VS Code with the `hediet.vscode-drawio` extension. Use Azure icons and stencils where relevant.
 
 ## Issue Naming Convention
 
