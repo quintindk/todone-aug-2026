@@ -4,11 +4,11 @@
 
 ToDone is a personal knowledge base, documentation hub, and task-tracking template for using **GitHub Copilot CLI as a personal assistant and second brain**. It captures hands-on work, investigation notes, meeting prep, and runbooks — all tied to GitHub Issues as the source of truth for active work items.
 
-> **Configure me first.** Replace the `<PLACEHOLDER>` values throughout this file with your own name, role, project IDs, and customer/context map. Search for `<` to find them.
+This instance was bootstrapped on 2026-05-12 for the **AUG Cape Town talk** ("ToDone: GitHub Copilot CLI as your second brain"). The synthetic prior week is Fabrikam payments-webhook work running Mon 4 May → Fri 8 May 2026.
 
 ## About the Author
 
-`<Your Name>` — `<Your Role>`. `<One sentence describing your domain and bias — e.g. "Strong bias toward hands-on delivery and real-world troubleshooting; expect engineer-level detail rather than slide-ware.">`
+**Quintin De Kok** — Senior Cloud Solutions Architect at Microsoft South Africa. Strong bias toward hands-on delivery and real-world troubleshooting on Azure (networking, identity, hybrid, AKS, IaC); expect engineer-level commands, KQL, Bicep and PowerShell rather than slide-ware.
 
 ## Customer & Context Map
 
@@ -16,8 +16,7 @@ Work items are organised by customer (or context — internal projects, learning
 
 | Customer / Context | Folder Slug | Notes |
 |--------------------|-------------|-------|
-| Fabrikam           | `fabrikam`  | Sample customer — payments hackathon-to-prod webhook handler |
-| `<Customer Name>`  | `<slug>`    | `<one-line context>` |
+| Fabrikam           | `fabrikam`  | Payments retail webhook handler — built in dev via the portal, needs reverse-IaC for compliance. RG: `rg-fabrikam-dev-webhook`. |
 | Internal           | `internal`  | Self-directed work, learning, admin |
 
 > **Tip:** When a new customer or context appears, add a row here and create the slug folder under `knowledge/`.
@@ -89,38 +88,36 @@ Reusable Copilot skills live in `.github/skills/`. Each skill has step-by-step i
 
 ## GitHub Project & Kanban Workflow
 
-All issues live in a GitHub Project board. **Configure these IDs once, then commit:**
+All issues live in a GitHub Project board:
 
-- **Project number:** `<PROJECT_NUMBER>` (e.g. `4`)
-- **Project owner:** `<PROJECT_OWNER>` (your github username or org)
-- **Project ID:** `<PROJECT_ID>` (the `PVT_*` GraphQL ID)
-- **Status field ID:** `<STATUS_FIELD_ID>` (the `PVTSSF_*` ID)
+- **Project number:** `6`
+- **Project owner:** `quintindk`
+- **Project ID:** `PVT_kwHOAYi-Fs4BXVwZ`
+- **Status field ID:** `PVTSSF_lAHOAYi-Fs4BXVwZzhSjOvk`
 
-> To find these: `gh project list --owner <you>`, then `gh project field-list <number> --owner <you> --format json`.
+> Re-derive these if needed: `gh project list --owner quintindk`, then `gh project field-list 6 --owner quintindk --format json`.
 
 ### Kanban Columns (Status field)
 
-| Status      | Option ID                      | When to use                                  |
-|-------------|--------------------------------|----------------------------------------------|
-| Todo        | `<TODO_OPTION_ID>`             | New / untriaged items                        |
-| Ready       | `<READY_OPTION_ID>`            | Scoped and ready to pick up                  |
-| In Progress | `<IN_PROGRESS_OPTION_ID>`      | Actively being worked on                     |
-| Waiting     | `<WAITING_OPTION_ID>`          | Blocked or awaiting customer/peer response   |
-| Done        | `<DONE_OPTION_ID>`             | Completed and closed                         |
+| Status      | Option ID    | When to use                                  |
+|-------------|--------------|----------------------------------------------|
+| Todo        | `f75ad846`   | New / untriaged items                        |
+| In Progress | `47fc9ee4`   | Actively being worked on                     |
+| Done        | `98236657`   | Completed and closed                         |
 
 ### Common `gh` Commands
 
 ```bash
 # Find an item's project-item ID by issue number
-gh project item-list <PROJECT_NUMBER> --owner <PROJECT_OWNER> --format json \
+gh project item-list 6 --owner quintindk --format json \
   | jq '.items[] | select(.content.number == <ISSUE_NUM>)'
 
-# Move an issue to a Kanban column
+# Move an issue to a Kanban column (e.g. In Progress)
 gh project item-edit \
-  --project-id <PROJECT_ID> \
+  --project-id PVT_kwHOAYi-Fs4BXVwZ \
   --id <ITEM_ID> \
-  --field-id <STATUS_FIELD_ID> \
-  --single-select-option-id <OPTION_ID>
+  --field-id PVTSSF_lAHOAYi-Fs4BXVwZzhSjOvk \
+  --single-select-option-id 47fc9ee4
 ```
 
 ### Sub-Issues
