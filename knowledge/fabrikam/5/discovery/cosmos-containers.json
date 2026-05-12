@@ -1,0 +1,69 @@
+[
+  {
+    "id": "/subscriptions/2ff70f85-2b12-42a0-82c0-49c30255fd61/resourceGroups/rg-fabrikam-dev-webhook/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-fabrikam-webhook-uvqvxk/sqlDatabases/webhook/containers/events",
+    "location": null,
+    "name": "events",
+    "options": null,
+    "resource": {
+      "_conflicts": "conflicts/",
+      "_docs": "docs/",
+      "_self": "dbs/Rw4xAA==/colls/Rw4xAIKtTxM=/",
+      "_sprocs": "sprocs/",
+      "_triggers": "triggers/",
+      "_udfs": "udfs/",
+      "analyticalStorageTtl": null,
+      "clientEncryptionPolicy": null,
+      "computedProperties": [],
+      "conflictResolutionPolicy": {
+        "conflictResolutionPath": "/_ts",
+        "conflictResolutionProcedure": "",
+        "mode": "LastWriterWins"
+      },
+      "createMode": null,
+      "defaultTtl": 2592000,
+      "etag": "\"00000b00-0000-3000-0000-6a02cf2b0000\"",
+      "fullTextPolicy": null,
+      "geospatialConfig": {
+        "type": "Geography"
+      },
+      "id": "events",
+      "indexingPolicy": {
+        "automatic": true,
+        "compositeIndexes": null,
+        "excludedPaths": [
+          {
+            "path": "/\"_etag\"/?"
+          }
+        ],
+        "fullTextIndexes": [],
+        "includedPaths": [
+          {
+            "indexes": null,
+            "path": "/*"
+          }
+        ],
+        "indexingMode": "consistent",
+        "spatialIndexes": null,
+        "vectorIndexes": null
+      },
+      "partitionKey": {
+        "kind": "Hash",
+        "paths": [
+          "/merchantId"
+        ],
+        "systemKey": null,
+        "version": null
+      },
+      "restoreParameters": null,
+      "rid": "Rw4xAIKtTxM=",
+      "ts": 1778569003.0,
+      "uniqueKeyPolicy": {
+        "uniqueKeys": []
+      },
+      "vectorEmbeddingPolicy": null
+    },
+    "resourceGroup": "rg-fabrikam-dev-webhook",
+    "tags": null,
+    "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+  }
+]

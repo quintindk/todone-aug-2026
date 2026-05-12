@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "env":         { "value": "prod" },
+    "nameSuffix":  { "value": "REPLACE_ME" },
+    "operatorObjectIds": {
+      "value": [
+        "REPLACE_ME_OPERATOR_OBJECT_ID"
+      ]
+    }
+  }
+}

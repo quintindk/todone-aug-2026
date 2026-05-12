@@ -1,0 +1,22 @@
+[
+  {
+    "id": "/subscriptions/2ff70f85-2b12-42a0-82c0-49c30255fd61/resourceGroups/rg-fabrikam-dev-webhook/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-fabrikam-webhook-uvqvxk/sqlDatabases/webhook",
+    "location": null,
+    "name": "webhook",
+    "options": null,
+    "resource": {
+      "_self": "dbs/Rw4xAA==/",
+      "colls": "colls/",
+      "createMode": null,
+      "etag": "\"00000900-0000-3000-0000-6a02cf150000\"",
+      "id": "webhook",
+      "restoreParameters": null,
+      "rid": "Rw4xAA==",
+      "ts": 1778568981.0,
+      "users": "users/"
+    },
+    "resourceGroup": "rg-fabrikam-dev-webhook",
+    "tags": null,
+    "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+  }
+]

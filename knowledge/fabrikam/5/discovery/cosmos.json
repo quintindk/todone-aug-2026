@@ -1,0 +1,136 @@
+{
+  "analyticalStorageConfiguration": {
+    "schemaType": "WellDefined"
+  },
+  "apiProperties": null,
+  "backupPolicy": {
+    "migrationState": null,
+    "periodicModeProperties": {
+      "backupIntervalInMinutes": 240,
+      "backupRetentionIntervalInHours": 8,
+      "backupStorageRedundancy": "Geo"
+    },
+    "type": "Periodic"
+  },
+  "capabilities": [
+    {
+      "name": "EnableServerless"
+    }
+  ],
+  "capacity": null,
+  "connectorOffer": null,
+  "consistencyPolicy": {
+    "defaultConsistencyLevel": "Session",
+    "maxIntervalInSeconds": 5,
+    "maxStalenessPrefix": 100
+  },
+  "cors": [],
+  "createMode": null,
+  "customerManagedKeyStatus": null,
+  "databaseAccountOfferType": "Standard",
+  "defaultIdentity": "FirstPartyIdentity",
+  "defaultPriorityLevel": "High",
+  "disableKeyBasedMetadataWriteAccess": false,
+  "disableLocalAuth": true,
+  "documentEndpoint": "https://cosmos-fabrikam-webhook-uvqvxk.documents.azure.com:443/",
+  "enableAnalyticalStorage": false,
+  "enableAutomaticFailover": true,
+  "enableBurstCapacity": false,
+  "enableCassandraConnector": null,
+  "enableFreeTier": false,
+  "enableMultipleWriteLocations": false,
+  "enablePartitionMerge": false,
+  "enablePerRegionPerPartitionAutoscale": false,
+  "enablePriorityBasedExecution": false,
+  "failoverPolicies": [
+    {
+      "failoverPriority": 0,
+      "id": "cosmos-fabrikam-webhook-uvqvxk-southafricanorth",
+      "locationName": "South Africa North"
+    }
+  ],
+  "id": "/subscriptions/2ff70f85-2b12-42a0-82c0-49c30255fd61/resourceGroups/rg-fabrikam-dev-webhook/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-fabrikam-webhook-uvqvxk",
+  "identity": {
+    "principalId": null,
+    "tenantId": null,
+    "type": "None",
+    "userAssignedIdentities": null
+  },
+  "instanceId": "40694e09-42db-427f-abe6-66c41a462e32",
+  "ipRules": [],
+  "isVirtualNetworkFilterEnabled": false,
+  "keyVaultKeyUri": null,
+  "keyVaultKeyUriVersion": null,
+  "keysMetadata": {
+    "primaryMasterKey": {
+      "generationTime": "2026-05-12T06:55:29.019341+00:00"
+    },
+    "primaryReadonlyMasterKey": {
+      "generationTime": "2026-05-12T06:55:29.019341+00:00"
+    },
+    "secondaryMasterKey": {
+      "generationTime": "2026-05-12T06:55:29.019341+00:00"
+    },
+    "secondaryReadonlyMasterKey": {
+      "generationTime": "2026-05-12T06:55:29.019341+00:00"
+    }
+  },
+  "kind": "GlobalDocumentDB",
+  "location": "South Africa North",
+  "locations": [
+    {
+      "documentEndpoint": "https://cosmos-fabrikam-webhook-uvqvxk-southafricanorth.documents.azure.com:443/",
+      "failoverPriority": 0,
+      "id": "cosmos-fabrikam-webhook-uvqvxk-southafricanorth",
+      "isZoneRedundant": false,
+      "locationName": "South Africa North",
+      "provisioningState": "Succeeded"
+    }
+  ],
+  "minimalTlsVersion": "Tls12",
+  "name": "cosmos-fabrikam-webhook-uvqvxk",
+  "networkAclBypass": "None",
+  "networkAclBypassResourceIds": [],
+  "privateEndpointConnections": null,
+  "provisioningState": "Succeeded",
+  "publicNetworkAccess": "Enabled",
+  "readLocations": [
+    {
+      "documentEndpoint": "https://cosmos-fabrikam-webhook-uvqvxk-southafricanorth.documents.azure.com:443/",
+      "failoverPriority": 0,
+      "id": "cosmos-fabrikam-webhook-uvqvxk-southafricanorth",
+      "isZoneRedundant": false,
+      "locationName": "South Africa North",
+      "provisioningState": "Succeeded"
+    }
+  ],
+  "resourceGroup": "rg-fabrikam-dev-webhook",
+  "restoreParameters": null,
+  "systemData": {
+    "createdAt": "2026-05-12T06:55:29.019341+00:00",
+    "createdBy": null,
+    "createdByType": null,
+    "lastModifiedAt": null,
+    "lastModifiedBy": null,
+    "lastModifiedByType": null
+  },
+  "tags": {
+    "azd-env-name": "aug-2026",
+    "cost-centre": "PAYMENTS-DEV",
+    "customer": "Fabrikam",
+    "managed-by": "manual",
+    "workload": "retail-webhook"
+  },
+  "type": "Microsoft.DocumentDB/databaseAccounts",
+  "virtualNetworkRules": [],
+  "writeLocations": [
+    {
+      "documentEndpoint": "https://cosmos-fabrikam-webhook-uvqvxk-southafricanorth.documents.azure.com:443/",
+      "failoverPriority": 0,
+      "id": "cosmos-fabrikam-webhook-uvqvxk-southafricanorth",
+      "isZoneRedundant": false,
+      "locationName": "South Africa North",
+      "provisioningState": "Succeeded"
+    }
+  ]
+}

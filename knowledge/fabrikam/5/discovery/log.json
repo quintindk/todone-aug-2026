@@ -1,0 +1,36 @@
+{
+  "createdDate": "2026-05-12T06:52:01.4419468Z",
+  "customerId": "4d2d3ea6-ceb6-4e67-80cb-ff22bfdaa26b",
+  "etag": "\"0c00fb41-0000-3000-0000-6a02ce1e0000\"",
+  "features": {
+    "enableLogAccessUsingOnlyResourcePermissions": true,
+    "legacy": 0,
+    "searchVersion": 1
+  },
+  "id": "/subscriptions/2ff70f85-2b12-42a0-82c0-49c30255fd61/resourceGroups/rg-fabrikam-dev-webhook/providers/Microsoft.OperationalInsights/workspaces/log-fabrikam-webhook-uvqvxk",
+  "location": "southafricanorth",
+  "modifiedDate": "2026-05-12T06:52:14.7131809Z",
+  "name": "log-fabrikam-webhook-uvqvxk",
+  "provisioningState": "Succeeded",
+  "publicNetworkAccessForIngestion": "Enabled",
+  "publicNetworkAccessForQuery": "Enabled",
+  "resourceGroup": "rg-fabrikam-dev-webhook",
+  "retentionInDays": 30,
+  "sku": {
+    "lastSkuUpdate": "2026-05-12T06:52:01.4419468Z",
+    "name": "PerGB2018"
+  },
+  "tags": {
+    "azd-env-name": "aug-2026",
+    "cost-centre": "PAYMENTS-DEV",
+    "customer": "Fabrikam",
+    "managed-by": "manual",
+    "workload": "retail-webhook"
+  },
+  "type": "Microsoft.OperationalInsights/workspaces",
+  "workspaceCapping": {
+    "dailyQuotaGb": -1.0,
+    "dataIngestionStatus": "RespectQuota",
+    "quotaNextResetTime": "2026-05-13T05:00:00Z"
+  }
+}

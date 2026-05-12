@@ -1,0 +1,22 @@
+[
+  {
+    "condition": null,
+    "conditionVersion": null,
+    "createdBy": "82f494a8-b9f5-46fc-b0f7-c70be0572a63",
+    "createdOn": "2026-05-12T06:57:21.476779+00:00",
+    "delegatedManagedIdentityResourceId": null,
+    "description": null,
+    "id": "/subscriptions/2ff70f85-2b12-42a0-82c0-49c30255fd61/resourcegroups/rg-fabrikam-dev-webhook/providers/Microsoft.KeyVault/vaults/kv-fabrk-wh-uvqvxk/providers/Microsoft.Authorization/roleAssignments/cf9b9aaa-f49c-57da-b45c-464dfe311874",
+    "name": "cf9b9aaa-f49c-57da-b45c-464dfe311874",
+    "principalId": "10901d5f-07b0-415e-9b52-81dd62ef496b",
+    "principalName": "c3a5d6f8-c31b-4c0b-8921-72455f33ecb7",
+    "principalType": "ServicePrincipal",
+    "resourceGroup": "rg-fabrikam-dev-webhook",
+    "roleDefinitionId": "/subscriptions/2ff70f85-2b12-42a0-82c0-49c30255fd61/providers/Microsoft.Authorization/roleDefinitions/4633458b-17de-408a-b874-0445c86b69e6",
+    "roleDefinitionName": "Key Vault Secrets User",
+    "scope": "/subscriptions/2ff70f85-2b12-42a0-82c0-49c30255fd61/resourcegroups/rg-fabrikam-dev-webhook/providers/Microsoft.KeyVault/vaults/kv-fabrk-wh-uvqvxk",
+    "type": "Microsoft.Authorization/roleAssignments",
+    "updatedBy": "82f494a8-b9f5-46fc-b0f7-c70be0572a63",
+    "updatedOn": "2026-05-12T06:57:21.476779+00:00"
+  }
+]

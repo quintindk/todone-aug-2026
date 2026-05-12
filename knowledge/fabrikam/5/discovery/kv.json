@@ -1,0 +1,44 @@
+{
+  "id": "/subscriptions/2ff70f85-2b12-42a0-82c0-49c30255fd61/resourceGroups/rg-fabrikam-dev-webhook/providers/Microsoft.KeyVault/vaults/kv-fabrk-wh-uvqvxk",
+  "location": "southafricanorth",
+  "name": "kv-fabrk-wh-uvqvxk",
+  "properties": {
+    "accessPolicies": [],
+    "createMode": null,
+    "enablePurgeProtection": null,
+    "enableRbacAuthorization": true,
+    "enableSoftDelete": true,
+    "enabledForDeployment": false,
+    "enabledForDiskEncryption": null,
+    "enabledForTemplateDeployment": null,
+    "hsmPoolResourceId": null,
+    "networkAcls": null,
+    "privateEndpointConnections": null,
+    "provisioningState": "Succeeded",
+    "publicNetworkAccess": "Enabled",
+    "sku": {
+      "family": "A",
+      "name": "standard"
+    },
+    "softDeleteRetentionInDays": 7,
+    "tenantId": "c6e67968-af25-4557-ab8b-06b693048d3b",
+    "vaultUri": "https://kv-fabrk-wh-uvqvxk.vault.azure.net/"
+  },
+  "resourceGroup": "rg-fabrikam-dev-webhook",
+  "systemData": {
+    "createdAt": "2026-05-12T06:52:01.412000+00:00",
+    "createdBy": "quintindekok@microsoft.com",
+    "createdByType": "User",
+    "lastModifiedAt": "2026-05-12T06:52:01.412000+00:00",
+    "lastModifiedBy": "quintindekok@microsoft.com",
+    "lastModifiedByType": "User"
+  },
+  "tags": {
+    "azd-env-name": "aug-2026",
+    "cost-centre": "PAYMENTS-DEV",
+    "customer": "Fabrikam",
+    "managed-by": "manual",
+    "workload": "retail-webhook"
+  },
+  "type": "Microsoft.KeyVault/vaults"
+}

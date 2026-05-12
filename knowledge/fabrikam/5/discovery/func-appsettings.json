@@ -1,0 +1,52 @@
+[
+  {
+    "name": "AzureWebJobsStorage",
+    "slotSetting": false,
+    "value": "DefaultEndpointsProtocol=https;AccountName=stfabrkwhuvqvxk;EndpointSuffix=core.windows.net;AccountKey=***REMOVED-STORAGE-KEY***=="
+  },
+  {
+    "name": "FUNCTIONS_EXTENSION_VERSION",
+    "slotSetting": false,
+    "value": "~4"
+  },
+  {
+    "name": "FUNCTIONS_WORKER_RUNTIME",
+    "slotSetting": false,
+    "value": "dotnet-isolated"
+  },
+  {
+    "name": "APPLICATIONINSIGHTS_CONNECTION_STRING",
+    "slotSetting": false,
+    "value": "InstrumentationKey=60ba5835-788e-42b6-b5a5-1798ec0bb3ee;IngestionEndpoint=https://southafricanorth-1.in.applicationinsights.azure.com/;LiveEndpoint=https://southafricanorth.livediagnostics.monitor.azure.com/;ApplicationId=cb7c00f6-00ab-4839-a68a-4a7f9afd5d18"
+  },
+  {
+    "name": "COSMOS_ENDPOINT",
+    "slotSetting": false,
+    "value": "https://cosmos-fabrikam-webhook-uvqvxk.documents.azure.com:443/"
+  },
+  {
+    "name": "COSMOS_DATABASE",
+    "slotSetting": false,
+    "value": "webhook"
+  },
+  {
+    "name": "COSMOS_CONTAINER",
+    "slotSetting": false,
+    "value": "events"
+  },
+  {
+    "name": "KEY_VAULT_NAME",
+    "slotSetting": false,
+    "value": "kv-fabrk-wh-uvqvxk"
+  },
+  {
+    "name": "PAYLOAD_ARCHIVE_ACCOUNT",
+    "slotSetting": false,
+    "value": "fabrikamwebhookhackuvqv"
+  },
+  {
+    "name": "PAYLOAD_ARCHIVE_CONTAINER",
+    "slotSetting": false,
+    "value": "payload-archive"
+  }
+]
