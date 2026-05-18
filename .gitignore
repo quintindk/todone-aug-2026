@@ -33,3 +33,4 @@ Thumbs.db
 .env.local
 *.pem
 *.key
+*.drawio.dtmp
